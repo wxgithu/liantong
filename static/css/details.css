@@ -1,0 +1,414 @@
+body{
+    padding:0;
+    margin:0;
+    font-size: 13px;
+}
+button{
+    cursor: pointer;
+
+}
+.main{
+    width:1200px;
+    margin:0 auto;
+
+}
+.left{
+    width: 330px;
+    display: inline-block;
+    float:left;
+}
+.right{
+    width:770px;
+    display: inline-block;
+}
+.breadcrumb {
+    background: white;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+.fdj{
+    position:relative;
+}
+.hide{
+    display: none;
+}
+.fdj .pd_md{
+    width:310px;
+    height:310px;
+    border:1px solid #e2e6ea;
+    background: url("../img/details/huawei_md.jpg") no-repeat;
+}
+.fdj .lgmask{
+    width:300px;height:300px;
+    border:1px solid #e2e6ea;
+    background: url("../img/details/huawei_lg.jpg");
+    overflow:hidden;
+    position:absolute;
+    left:310px;
+    top:0;
+
+}
+.fdj .mask{
+    width:116px;
+    height:116px;
+    background: lightyellow;
+    opacity: 0.6;
+    position: absolute;
+}
+.lgmask .pd_lg{
+    position: absolute;
+}
+.supermask{
+    width:312px;
+    height:312px;
+    position: absolute;
+    top: 0;
+}
+
+.pd_sm {
+    border:2px solid #e2e6ea;
+    margin: 5px;
+    padding: 3px;
+}
+.pd_sm:hover{
+    border:2px solid #007bff;
+}
+.my_orange{
+    color:#FF6600;
+}
+.star{
+    width: 83px;
+    height: 15px;
+    margin: 8px 10px 0 0;
+    background: url(../img/details/stars.png) 0 -55px no-repeat;
+
+}
+.active{
+    border:2px solid #007bff;
+    padding: 2px 4px;
+    background:#f7f7f7;
+}
+.longbtn{
+    width:180px;
+
+}
+.spxz button{
+    background: white;
+}
+/*******************城市选择*******************/
+.city .change-city{
+    cursor: pointer ;
+}
+
+.select_city{
+    width:2000px;height:6500px;
+    background: rgba(0,0,0,0.2);
+    position:absolute;
+    top:0;left:0;
+    z-index: 100;
+    border:1px solid red;
+    transition: all 0.2s linear;
+    display: none;
+}
+.select_city>div{
+    width:230px;
+    position:relative;
+    left:40%;
+    top:255px;
+}
+.select_city>div>div:first-child{
+    width:233px;height:35px;
+    background:url("../img/details/cityLayerT.png");
+    color:white;
+}
+.select_city>div>div:first-child span{
+    position: relative;
+    top:10px;
+    left:15px;
+    font-weight: bold;
+}
+.select_city>div>div:first-child .close-city{
+    width:15px;height:15px;
+    cursor: pointer;
+    position: absolute;
+    top:10px;
+    left:203px;
+}
+.select_city>div>div:last-child{
+    width:222px;height:145px;
+    background: white;
+    margin-top:-17px;
+    margin-left:4px;
+}
+.select_city>div>div:last-child>ul{
+    list-style: none;
+    margin-left: -20px;
+}
+.select_city>div>div:last-child>ul>li{
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.select_city>div>div:last-child>ul>li:hover{
+    color:#FF6600;
+}
+
+.sm_jt{
+    width:16px;height:16px;
+    background: url("../img/details/proddetlIcon.gif") -143px -76px no-repeat;
+    position: absolute;
+    left:230px;
+    top:20px;
+}
+
+.buy_btn{
+    width:118px;height:37px;
+    cursor: pointer;
+    background: url("../img/details/proddetlIcon.gif") 1px 1px no-repeat;
+    margin:70px 0 0 130px ;
+}
+
+.gys{
+    width:180px;
+    border:1px solid #e2e6ea;
+    border-radius: 5px;
+    float:left;
+}
+.gys>div:first-child{
+
+    width:100%;
+    height:33px;
+    font-weight: bold;
+    padding-left:10px;
+    background: #F7F7F7;
+    line-height: 33px;
+    border:1px solid #f7f7f7;
+}
+.gys>div:nth-child(2){
+    border-bottom:1px dashed #e2e6ea;
+    padding:3px;
+}
+
+.gys>div:nth-child(2)~div{
+    margin-left: 7px;
+    margin:5px;
+}
+.gys>div:nth-child(5){
+    padding-bottom:17px;
+    border-bottom: 1px dashed #e2e6ea;
+}
+
+.cpjs{
+    width:795px;
+    position:relative;
+    left:20px;
+    overflow: hidden;
+}
+.cpjs>ul{
+    list-style: none;
+    margin-top:15px;
+    padding:0;
+}
+.cpjs>ul>li{
+    float:left;
+    height:32px;
+    border:1px solid #e2e6ea;
+    background: #f7f7f7;
+    margin-top:32px;
+    margin-left: 3px;
+    padding-top: 4px;
+    font-weight: bold;
+    padding-left: 18px;
+    padding-right:18px;
+    cursor: pointer;
+}
+.cpjs>ul>li.active{
+    border-radius: 4px;
+    background:#FF6600;
+    color: white;
+}
+.cpjs>div:nth-child(2){
+
+    border-bottom:2px solid #FF6600;
+    margin-top:-2px;
+}
+.spxx{
+    display: none;
+}
+.spxx>ul{
+    padding:10px 20px;
+}
+.spxx>ul>li{
+    display: inline-block;
+    font-size: 14px;
+}
+.spxx>ul>li:nth-child(even){
+    margin-left: 30px;
+}
+.spxx>ul>li i{
+    display: inline-block;
+    width:45px;
+    height:45px;
+
+}
+.spxx .icon1{
+    background: url("../img/details/parameter.png") -8px -193px no-repeat;
+}
+.spxx .icon2{
+    background: url("../img/details/parameter.png") -8px -4px no-repeat;
+}
+.spxx .icon3{
+    background: url("../img/details/parameter.png") -8px -239px no-repeat;
+}
+.spxx .icon4{
+    background: url("../img/details/parameter.png") -8px -50px no-repeat;
+}
+.spxx .icon5{
+    background: url("../img/details/parameter.png") -8px -286px no-repeat;
+}
+.spxx .icon6{
+     background: url("../img/details/parameter.png") -8px -97px no-repeat;
+ }
+.spxx .icon7{
+    background: url("../img/details/parameter.png") -8px -332px no-repeat;
+}
+.spxx .icon8{
+    background: url("../img/details/parameter.png") -8px -144px no-repeat;
+}
+
+.spxx>ul>li>div{
+    display: inline-block;
+    width:310px;
+    height:48px;
+    overflow: hidden;
+    border-bottom: 1px solid #FF6600;
+}
+.spxx>ul>li>div>div{
+    color:#FF6600;
+    margin-top: 15px;
+    display:inline-block;
+}
+.spxx>ul>li div span{
+    float:right;
+    color:#6c757d;
+    margin-top: 15px;
+}
+
+.sjcs{
+    display: none;
+}
+.sjcs .my_card{
+    width:262px;
+    height:294px;
+    color:#6c757d;
+    background: #fbfbfb;
+    margin-top: 10px;
+    padding:5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.sjcs .my_card_header{
+    font-size: 23px;
+    border-bottom: 1px dashed #6c757d;
+}
+.my_card_body>ul>li{
+    margin-top: 5px;
+}
+.my_card_body>ul>li>b{
+    font-size: 15px;
+
+}
+.sppj{
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 500px;
+}
+.sppj>div{
+    border:1px solid #ced4da;
+}
+.sppj>div:first-child{
+    background:#FAFAFA;
+    width:780px;
+}
+.sppj>div:first-child>div:nth-child(2)>span:nth-child(2){
+    font-size: 58px;
+}
+
+.sppj .good{
+    width:250px;
+    height:14px;
+    background: #F18501;
+}
+.sppj .average{
+    width:250px;
+    height:14px;
+    background: #E7E7E7;
+}
+.sppj .poor{
+    width:250px;
+    height:14px;
+    background: #E7E7E7;
+}
+
+.sppj .pingjia{
+    width:350px;
+}
+.sppj .pingjia>div>div{
+    float:right;
+    margin-top: 4px;
+}
+.pay{
+    display:none;
+}
+.say{
+    background: #F18501;
+    width:82px ;
+    height:23px ;
+    color:white;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px ;
+    margin-left: 30px;
+}
+
+.evaluate{
+    width:780px;
+    height:32px;
+    background: #F3F3F3;
+    border-bottom: 2px solid #ced4da;
+}
+.evaluate>ul>li{
+    float:left;
+    line-height: 32px;
+    padding:0 15px;
+    cursor: pointer;
+}
+.onshow{
+    border-left: 1px solid #ced4da;
+    border-right:1px solid #ced4da;
+    border-top: 2px solid #FF6600;
+    font-weight: bold;
+}
+
+.sppj>div:last-child{
+    width:780px;
+    height:120px;
+    border:1px solid #ced4da;
+
+}
+
+.plk{
+    width:100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.zxdg{
+    cursor: pointer;
+    position:fixed;
+    right:20px;
+    top:100px;
+}
